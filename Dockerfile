@@ -12,9 +12,9 @@ RUN ./install-nvm.sh
 
 
 
-SHELL ["/bin/bash", "-c", " source ~/.profile "]
+#SHELL ["/bin/bash", "-c", " source ~/.profile "]
 
-RUN ./set-node-version.sh
+#SHELL ["/bin/bash","./set-node-version.sh"]
 
 WORKDIR /
 
