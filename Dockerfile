@@ -7,8 +7,10 @@ RUN mkdir /srv/node && mkdir /srv/scripts
 WORKDIR /srv/scripts
 COPY scripts/* ./
 
+ARG node_version
+
 RUN chmod +x ./*
-RUN ./install-nvm.sh
+RUN ./install-nvm.sh ${node_version}
 
 
 
